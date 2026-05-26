@@ -1,0 +1,123 @@
+/* Ерөнхий тохиргоо */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', 'Georgia', serif; /* Шинэ чамин фонт */
+}
+
+body {
+    background-image: url('kitty.webp'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Тооны машины их бие */
+.calculator-container {
+    background-color: #1c191b; 
+    border: 4px double #fcd7e8; 
+    border-radius: 24px;
+    padding: 30px;
+    width: 340px;
+    box-shadow: 0 10px 30px rgba(252, 215, 232, 0.3), 0 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* Дэлгэцийн хэсэг */
+.display-container {
+    background-color: #0f0e0f;
+    border: 2px solid #fcd7e8;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    padding: 15px;
+    box-shadow: inset 0 0 10px rgba(252, 215, 232, 0.2);
+}
+
+#display {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fcd7e8; 
+    font-size: 2.4rem;
+    text-align: right;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px #fcd7e8;
+}
+
+/* Товчлуурууд */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.btn {
+    background-color: #2b2528;
+    border: 1px solid #42393d;
+    color: #fcd7e8; 
+    padding: 18px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #fcd7e8; 
+    color: #1c191b; 
+    box-shadow: 0 0 15px #fcd7e8;
+    transform: translateY(-2px);
+}
+
+.btn.operator {
+    color: #fca6cf; 
+    border-color: #593f4c;
+}
+
+.btn.operator:hover {
+    background-color: #fca6cf;
+    color: #1c191b;
+    box-shadow: 0 0 15px #fca6cf;
+}
+
+.btn.clear {
+    color: #ff9aa2; 
+    border-color: #5c3c3e;
+}
+
+.btn.clear:hover {
+    background-color: #ff9aa2;
+    color: #1c191b;
+}
+
+.btn.equal {
+    grid-row: span 2;
+    border-radius: 30px;
+    background-color: #3d3237;
+    color: #fcd7e8;
+    border: 2px solid #fca6cf;
+}
+
+.btn.equal:hover {
+    background-color: #fcd7e8;
+    color: #1c191b;
+}
+.author-signature {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.75rem;
+    color: rgba(252, 215, 232, 0.5); 
+    letter-spacing: 3px;
+    text-transform: uppercase; 
+    text-shadow: 0 0 5px rgba(252, 215, 232, 0.2);
+    font-family: 'Cinzel', serif;
+}
